@@ -1,0 +1,97 @@
+# Compiled source files
+*.dll
+*.exe
+*.log
+*.obj
+*.pdb
+*.cache
+*.ilk
+*.lib
+*.ndb
+*.ndc
+*.nupkg
+*.out
+*.tlb
+*.tlh
+*.tmp
+*.vspscc
+*.vssscc
+
+# Logs
+*.log
+*.tlog
+
+# Build Folders
+bin/
+obj/
+out/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio working files
+.vscode/
+.vs/
+.vscode/
+.vsscc
+*.vspx
+.ipch/
+
+# Rider & ReSharper
+.idea/
+*.sln.iml
+*.csproj.user
+*.csproj.v2.user
+*.csproj.v3.user
+_ReSharper*/
+*.[Cc]ache/
+
+# NuGet
+*.nupkg
+# Include if NuGet.exe is in the repo
+!nuget.exe
+# Include if packages should be checked in by default
+#!packages/repositories.config
+# Uncomment if necessary
+# packages/*
+
+# macOS
+.DS_Store
+
+# Windows image file caches
+Thumbs.db
+
+# Windows thumbnail cache files
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Backup folder for testing
+_backup*/
+
+# Coverage Results
+*.coverage
+*.coveragexml
+.coverage/
+.coverage.runsettings
+
+# Publish folder
+publish/
+app.publish/
+
+# Entity Framework
+*.edmx.diagram
+*.edmx.sql
+*.edmx.sqlce
+Migrations/
+
+# Rider
+.idea/
