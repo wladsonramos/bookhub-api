@@ -28,6 +28,19 @@ namespace bookhub_api.Books
                 var books = await context.Books.ToListAsync();
                 return books;
             });
+
+            routesBooks.MapPut("{id}", async (Guid id, UpdateBookRequest request, AppDbContext context) =>
+            {
+                var book = await context.Books.SingleOrDefaultAsync(book => book.Id == id);
+
+                if (book == null)
+                    return Results.NotFound();
+
+                book.UpdateBook(request.Name, request.Description);
+
+                await context.SaveChangesAsync();
+                return Results.Ok(book);
+            });
         }
     }
 }
