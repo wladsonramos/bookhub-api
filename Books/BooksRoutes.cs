@@ -22,6 +22,12 @@ namespace bookhub_api.Books
 
                 return Results.Ok(newBook);
             });
+
+            routesBooks.MapGet("", async (AppDbContext context) =>
+            {
+                var books = await context.Books.ToListAsync();
+                return books;
+            });
         }
     }
 }
